@@ -2,8 +2,20 @@
   background-color: $color-white;
   box-shadow: 0 2px 12px 0px rgba(60, 60, 60, 0.1);
   margin-bottom: 30px;
-  max-width: 290px;
+  max-width: 100%;
   padding: 10px;
+
+  @include breakpoint($sm) {
+    max-width: 240px;
+  }
+
+  @include breakpoint($md) {
+    max-width: 310px;
+  }
+
+  @include breakpoint($lg) {
+    max-width: 255px;
+  }
 
   &__image {
     img {

@@ -1,7 +1,17 @@
 .categories {
   &__list {
     li {
-      margin-bottom: 10px;
+      background-color: #eae1e1;
+      border-radius: 50px;
+      display: inline-block;
+      margin: 0 5px 10px 0;
+      padding: 5px 10px;
+
+      @include breakpoint($sm) {
+        display: block;
+        background-color: transparent;
+      }
+
       .icon {
         margin-right: 5px;
       }
